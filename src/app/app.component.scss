@@ -1,0 +1,57 @@
+.linkSelected{
+   font-weight: bold;
+}
+
+a:link, a:visited {
+   background-color: #58cd41;
+   border-radius: 15px;
+   color: aliceblue;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   margin: 5px;
+   padding-left: 1%;
+   padding-top: 1%;
+   padding-right: 1%;
+   padding-bottom: 1%;
+}
+
+a:hover, a:active{
+   background-color: rgb(64, 80, 207);
+}
+
+.menu{
+   overflow: hidden;
+
+}
+
+.drop-menu{
+   float: left;
+   overflow: hidden;
+}
+
+.drop-menu .dropbtn{
+   font-size: 16px;
+   color: white;
+   padding: 14px, 16px;
+   background-color: #58cd41;
+   font-family: inherit;
+   border-radius: 15px;
+}
+
+.drop-content{
+   display: none;
+   position: absolute;
+   min-width: 160px;
+   z-index: 1;
+}
+
+.drop-content a{
+   float: none;
+}
+
+.menu a:hover, .drop-menu:hover .dropbtn{
+   background-color: #4187cd;
+}
+
+

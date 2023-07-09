@@ -1,0 +1,36 @@
+<div class="fundo">
+    <h2>Calcule seu IMC</h2>
+    <div class="campoNome">
+        <label for="nome">Nome: </label>
+        <input type="text" [(ngModel)]="nome" id="nome">
+        <h1>{{nome}}</h1>
+    </div>
+    <br>
+    <div class="campoSexo">
+        <label for="sexo">Sexo: </label>
+        <input type="radio" id="masculino" name="sexo" [(ngModel)]="sexo" value="M">
+        <label for="sexo"><strong>Masculino</strong></label>
+        <input type="radio" id="feminino" name="sexo" [(ngModel)]="sexo" value="F">
+        <label for="sexo"><strong>Feminino</strong></label>
+    </div>
+    <br>
+    <div class="campoPeso">
+        <label for="peso">Peso: </label>
+        <input type="number" id="peso" name="peso" [(ngModel)]="peso">
+        <h1>{{peso}}</h1>
+    </div>
+    <br>
+    <div class="campoAltura">
+        <label for="altura">Altura: </label>
+        <input type="number" id="altura" name="altura" [(ngModel)]="altura">
+        <h1>{{altura}}</h1>
+    </div>
+    <br>
+    <div class="botao">
+        <button (click)="calcImc()" (click)="avaliacaoImc()" [disabled]="peso == 0 || altura == 0">Avaliar</button>
+    </div>
+    <br>
+    <div class="campoAvaliacao">
+        <textarea name="txtAvaliacao" id="txtAvaliacao" cols="30" rows="10"></textarea>
+    </div>
+</div>
