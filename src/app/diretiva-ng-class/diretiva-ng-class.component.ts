@@ -8,9 +8,18 @@ import { Component } from '@angular/core';
 export class DiretivaNgClassComponent {
   public valor: boolean = true;
 
+  public num1: number = 0;
+  public num2: number = 0;
+  public resultado: number = 0;
+
    ngOnInit(): void {
        setInterval(() =>{
         this.valor = !this.valor;
        }, 1000);
+   }
+
+   public compara(){
+    this.resultado = this.num1 * this.num2;
+    return this.resultado == 30;
    }
 }

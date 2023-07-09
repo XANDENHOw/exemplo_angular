@@ -1,6 +1,7 @@
 <h1>Exemplo ngStyle</h1>
 
-<div class="caixa" [ngStyle]="{'width':larguraStr}"></div>
+<div class="caixa" [ngStyle]="{'width':larguraStr}" [ngStyle]="{'border-radius':borderRadiusStr}"></div>
 <hr>
 <button (click)="aumenta()">Aumentar</button>
 <button (click)="diminui()">Diminuir</button>
+<button (click)="arredonda()">Arredondar</button>

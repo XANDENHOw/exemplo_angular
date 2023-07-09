@@ -1,1 +1,17 @@
 <h1 [ngClass]="{'preto': valor, 'amarelo':!valor}">Exemplo ngClass - Troca a classe a cada segundo</h1>
+
+<div [ngClass]="{'acertou': resultado, 'errou':!resultado}">
+    <p>Informe dois números que multipicados resultem em 30.</p>
+    <label for="num1">Número 1:</label>
+    <br>
+    <input type="number" id="num1" [(ngModel)]="num1">
+    <br><br>
+    <label for="num2">Número 2:</label>
+    <br>
+    <input type="number" id="numero2" [(ngModel)]="num2">
+    <br><br>
+    <button (click)="compara()">Multiplicar</button>
+    <br><br>
+    <label for="resultado">Resultado: {{resultado}}</label>
+    <br>
+</div>

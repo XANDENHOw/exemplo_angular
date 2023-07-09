@@ -4,6 +4,24 @@
   }
   
   .amarelo{
-    background-color: yellow;
+    background-color: rgb(250, 250, 246);
     color: black;
+  }
+
+  .acertou{
+    background-color: green;
+    color: black;
+  }
+
+  .errou{
+    background-color: red;
+    color: black;
+  }
+
+  button{
+      font-size: 16px;
+      color: white;
+      padding: 14px, 16px;
+      background-color: #010300;
+      border-radius: 15px;
   }

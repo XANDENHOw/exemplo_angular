@@ -33,4 +33,42 @@ export class DiretivaNgForComponent {
     this.nomeSelecionado = p.nome;
     this.idadeSelecionado = p.idade;
   }
+
+  modelo: string = "";
+  ano: number = 0;
+  quantidade:number = 0;
+
+  public carros: any = [
+    {modelo: "Corolla", ano: 2020, quantidade:5},
+    {modelo: "Civic", ano: 2020, quantidade:5},
+    {modelo: "Cruze", ano: 2020, quantidade:5}
+  ];
+
+  public comprarCorolla(){
+    const corolla = this.carros.find((value: any) => value.modelo === "Corolla");
+    if(corolla && corolla.quantidade > 0){
+      corolla.quantidade -= 1;
+    }
+  }
+
+  public comprarCivic(){
+    const civic = this.carros.find((value: any) => value.modelo === "Civic");
+    if(civic && civic.quantidade > 0){
+      civic.quantidade -= 1;
+    }
+  }
+
+  public comprarCruze(){
+    const cruze = this.carros.find((value: any) => value.modelo === "Cruze");
+    if(cruze && cruze.quantidade > 0){
+      cruze.quantidade -= 1;
+    }
+  }
+
+  public clickCarro(c: any){
+    console.log(c);
+    this.modelo = c.modelo;
+    this.ano = c.ano;
+    this.quantidade = c.quantidade;
+  }
 }

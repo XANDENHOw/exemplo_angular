@@ -11,3 +11,146 @@
   <p *ngSwitchCase="7"> Sábado</p>
   <p *ngSwitchDefault> Não representa um dia de semana</p>
 </div>
+
+<input type="number" [(ngModel)]="valor">
+<div [ngSwitch]="valor">
+  <table *ngSwitchCase="1" border="1" cellSpacing="2" width="30%">
+    <tr>
+      <td>Estado</td>
+      <td>Região</td>
+    </tr>
+    <tr>
+      <td>Acre</td>
+      <td>Norte</td>
+    </tr>
+    <tr>
+      <td>Amapá</td>
+      <td>Norte</td>
+    </tr>
+    <tr>
+      <td>Amazonas</td>
+      <td>Norte</td>
+    </tr>
+    <tr>
+      <td>Pará</td>
+      <td>Norte</td>
+    </tr>
+    <tr>
+      <td>Rodônia</td>
+      <td>Norte</td>
+    </tr>
+    <tr>
+      <td>Roraima</td>
+      <td>Norte</td>
+    </tr>
+    <tr>
+      <td>Tocantins</td>
+      <td>Norte</td>
+    </tr>
+  </table>
+  <table *ngSwitchCase="2" border="1" cellSpacing="2" width="30%">
+    <tr>
+      <td>Estado</td>
+      <td>Região</td>
+    </tr>
+    <tr>
+      <td>Alagoas</td>
+      <td>Nordeste</td>
+    </tr>
+    <tr>
+      <td>Bahia</td>
+      <td>Nordeste</td>
+    </tr>
+    <tr>
+      <td>Ceará</td>
+      <td>Nordeste</td>
+    </tr>
+    <tr>
+      <td>Maranhão</td>
+      <td>Nordeste</td>
+    </tr>
+    <tr>
+      <td>Paraíba</td>
+      <td>Nordeste</td>
+    </tr>
+    <tr>
+      <td>Pernambuco</td>
+      <td>Nordeste</td>
+    </tr>
+    <tr>
+      <td>Piauí</td>
+      <td>Nordeste</td>
+    </tr>
+    <tr>
+      <td>Rio Grande do Norte</td>
+      <td>Nordeste</td>
+    </tr>
+    <tr>
+      <td>Sergipe</td>
+      <td>Nordeste</td>
+    </tr>
+  </table>
+  <table *ngSwitchCase="3" border="1" cellSpacing="2" width="30%">
+    <tr>
+      <td>Estado</td>
+      <td>Região</td>
+    </tr>
+    <tr>
+      <td>Distrito Federal</td>
+      <td>Centro-Oeste</td>
+    </tr>
+    <tr>
+      <td>Goiás</td>
+      <td>Centro-Oeste</td>
+    </tr>
+    <tr>
+      <td>Mato Grosso</td>
+      <td>Centro-Oeste</td>
+    </tr>
+    <tr>
+      <td>Mato Grosso do Sul</td>
+      <td>Centro-Oeste</td>
+    </tr>
+  </table>
+  <table *ngSwitchCase="4" border="1" cellSpacing="2" width="30%">
+    <tr>
+      <td>Estado</td>
+      <td>Região</td>
+    </tr>
+    <tr>
+      <td>Espírito Santo</td>
+      <td>Sudeste</td>
+    </tr>
+    <tr>
+      <td>Minas Gerais</td>
+      <td>Sudeste</td>
+    </tr>
+    <tr>
+      <td>São Paulo</td>
+      <td>Sudeste</td>
+    </tr>
+    <tr>
+      <td>Rio de Janeiro</td>
+      <td>Sudeste</td>
+    </tr>
+  </table>
+  <table *ngSwitchCase="5" border="1" cellSpacing="2" width="30%">
+    <tr>
+      <td>Estado</td>
+      <td>Região</td>
+    </tr>
+    <tr>
+      <td>Paraná</td>
+      <td>Sul</td>
+    </tr>
+    <tr>
+      <td>Rio Grande do Sul</td>
+      <td>Sul</td>
+    </tr>
+    <tr>
+      <td>Santa Catarina</td>
+      <td>Sul</td>
+    </tr>
+  </table>
+  <p *ngSwitchDefault> Não representa uma região do Brasil</p>
+</div>

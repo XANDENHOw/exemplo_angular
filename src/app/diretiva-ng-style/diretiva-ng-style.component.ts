@@ -9,6 +9,9 @@ export class DiretivaNgStyleComponent {
 
   public largura : number = 100;
   public larguraStr : string = "100px"
+  public borderRadius: number = 50;
+  public borderRadiusStr: string = "50px";
+
 
   aumenta(){
     this.largura += 50;
@@ -19,5 +22,9 @@ export class DiretivaNgStyleComponent {
     this.largura -= 50;
     this.larguraStr = this.largura+"px";
   }
-  
+   
+  arredonda(){
+    this.borderRadius += 50;
+    this.borderRadiusStr = this.borderRadius + "px";
+  }
 }

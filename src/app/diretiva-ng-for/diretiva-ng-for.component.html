@@ -1,9 +1,4 @@
 <h1>Exemplo ngFor</h1>
- 
-<!-- <ul>
-  <li style="margin: 3px;" *ngFor="let pessoa of listaPessoas" (click)="clickPessoa(pessoa)">
-    Nome: {{pessoa.nome}} - Idade: {{pessoa.idade}}</li>
-</ul> -->
 
 <table border="1" cellSpacing="0" width="30%">
   <tr>
@@ -18,6 +13,29 @@
 <hr/>
 <button (click)="addPessoa()">Adiciona Pessoa</button>
 <button (click)="removePessoa()">Remove Pessoa</button>
+
+<br><br>
+<div *ngIf="nomeSelecionado != ''">
+  <h2>{{nomeSelecionado}}</h2>
+  <h2>{{idadeSelecionado}}</h2>
+</div>
+
+<table border="1" cellSpacing="0" width="30%">
+  <tr>
+    <td align="center"><b>Modelo</b></td>
+    <td align="center"><b>Ano</b></td>
+    <td align="center"><b>Quantidade</b></td>
+  </tr>
+  <tr *ngFor="let carroDaLista of carros" (click)="clickCarro(carroDaLista)">
+    <td>{{carroDaLista.modelo}}</td>
+    <td>{{carroDaLista.ano}}</td>
+    <td>{{carroDaLista.quantidade}}</td>
+  </tr>
+</table>
+<hr/>
+<button (click)="comprarCorolla()">Comprar Corolla</button>
+<button (click)="comprarCivic()">Comprar Civic</button>
+<button (click)="comprarCruze()">Comprar Cruze</button>
 
 <br>
 <div *ngIf="nomeSelecionado != ''">
