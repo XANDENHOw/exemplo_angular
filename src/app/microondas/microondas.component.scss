@@ -1,0 +1,60 @@
+.centraliza {
+    display: grid;
+    justify-content: center;
+    background-color: rgb(42, 39, 39);
+    color: aliceblue;
+}
+
+.caixa {
+    justify-content: center;
+    align-content: center;
+}
+
+.visor {
+    font-size: 48px;
+    text-align: center;
+    background-color: rgb(77, 74, 74);
+    color: rgb(18, 246, 79);
+    border-radius: 15px;
+    width: 500px;
+}
+
+.teclado {
+    background-color: black;
+    color: aliceblue;
+    border-radius: 15px;
+    justify-content: center;
+    width: 100%;
+}
+
+button {
+    background-color: black;
+    color: aliceblue;
+    width: 25%;
+    height: 50px;
+    border: 2;
+    border-color: aliceblue;
+    border-radius: 15px;
+}
+
+.cancelar {
+    background-color: black;
+    color: aliceblue;
+    width: 50%;
+    height: 50px;
+    border: 1;
+    border-radius: 15px;
+}
+
+.ligar {
+    background-color: black;
+    color: aliceblue;
+    width: 50%;
+    height: 50px;
+    border: 1;
+    border-radius: 15px;  
+}
+
+button:hover{
+    background-color: rgb(122, 227, 104);
+}

@@ -1,1 +1,24 @@
-<p>microondas works!</p>
+<div class="centraliza">
+    <div class="caixa">
+        <p class="visor">{{minutes | number: '2.0'}}:{{seconds | number: '2.0'}}</p>
+    </div>
+    <div class="teclado">
+        <button (click)="aumentaUm()">1</button>
+        <button (click)="aumentaDois()">2</button>
+        <button (click)="aumentaTres()">3</button>
+        <button (click)="aumentaMin()">+1min</button>
+        <br>
+        <button (click)="aumentaQuatro()">4</button>
+        <button (click)="aumentaCinco()">5</button>
+        <button (click)="aumentaSeis()">6</button>
+        <button (click)="aumentaZero()">0</button>
+        <br>
+        <button (click)="aumentaSete()">7</button>
+        <button (click)="aumentaOito()">8</button>
+        <button (click)="aumentaNove()">9</button>
+        <button (click)="aumentaTrintaSec()">+30seg</button>
+        <br>
+        <button (click)="stop()" class="cancelar">Cancelar</button>
+        <button (click)="start()" [disabled]="timeLeft < 0" class="ligar">Ligar</button>
+    </div>
+</div>
