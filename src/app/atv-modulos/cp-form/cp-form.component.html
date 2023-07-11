@@ -1,0 +1,9 @@
+<div>
+    <label for="nome">Informe o nome do medicamento:  </label>
+    <input type="text" #inputProp>
+    <br><br>
+    <label for="preco">Informe o preço do medicamento:  </label>
+    <input type="number" #inputProp>
+    <br><br>
+    <button (click)="addMedicamento(inputProp.value)">Cadastrar</button>
+</div>

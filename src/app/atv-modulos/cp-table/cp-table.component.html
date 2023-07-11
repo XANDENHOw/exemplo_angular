@@ -1,0 +1,16 @@
+<div>
+    <table border="1" cellSpacing="0" width="100%">
+        <tr>
+            <td width="60%">Nome</td>
+            <td>Preço</td>
+        </tr>
+        <tr *ngFor="let medicamento of medicamentos">
+            <td>
+                {{medicamento.nome}}
+            </td>
+            <td>
+                {{medicamento.preco}}
+            </td>
+        </tr>
+    </table>
+</div>
