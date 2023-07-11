@@ -7,7 +7,9 @@ import { Component } from '@angular/core';
 })
 export class CpPaiComponent {
 
-  public recebeNumero(){
+  public numeroSorteado: number = 0;
 
+  public recebeNumero(nr: number) {
+    this.numeroSorteado = nr;
   }
 }

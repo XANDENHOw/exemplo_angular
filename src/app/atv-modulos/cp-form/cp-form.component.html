@@ -1,9 +1,9 @@
 <div>
     <label for="nome">Informe o nome do medicamento:  </label>
-    <input type="text" #inputProp>
+    <input type="text" [(ngModel)]="nomeSelecionado" #inputName>
     <br><br>
     <label for="preco">Informe o preço do medicamento:  </label>
-    <input type="number" #inputProp>
+    <input type="number" [(ngModel)]="precoSelecionado" #inputPreco>
     <br><br>
-    <button (click)="addMedicamento(inputProp.value)">Cadastrar</button>
+    <button (click)="addMedicamento(inputName.value, inputPreco.value)">Cadastrar</button>
 </div>

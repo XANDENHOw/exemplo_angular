@@ -8,10 +8,9 @@ import { FormTableService } from '../services/form-table.service';
 })
 export class CpFormComponent implements OnInit{
 
-  public medicamento = {
-    nome:"",
-    preco:0
-  }
+  public nomeSelecionado: string = "";
+  public precoSelecionado: number = 0;
+  public medicamentos: any = [];
   public qt: number = 0;
 
   constructor(private service: FormTableService){}
@@ -23,7 +22,7 @@ export class CpFormComponent implements OnInit{
     });
   }
 
-  public addMedicamento(medicamento:any){
-    return this.service.adiciona(medicamento);
+  public addMedicamento(nome:string, preco:string){
+    return this.service.adiciona(nome, parseFloat(preco));
   }
 }

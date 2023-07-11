@@ -4,7 +4,7 @@
             <td width="60%">Nome</td>
             <td>Preço</td>
         </tr>
-        <tr *ngFor="let medicamento of medicamentos">
+        <tr *ngFor="let medicamento of medicamentos" (click)="medicamento">
             <td>
                 {{medicamento.nome}}
             </td>

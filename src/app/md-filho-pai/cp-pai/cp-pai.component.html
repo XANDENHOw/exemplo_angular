@@ -1,4 +1,8 @@
 <h1>Componente Pai</h1>
+<h3>
+    Numero recebido:
+    <br>
+    {{numeroSorteado}}
+</h3>
 
-
-<app-cp-filho></app-cp-filho>
+<app-cp-filho (emiteEventoPai)="recebeNumero($event)"></app-cp-filho>
